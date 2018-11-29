@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+	<head>
+			<title>作业一之高考志愿填报</title>
+			<meta charset="utf-8">
+			<style type="text/css">
+				#GK{
+					text-align: center;
+					font-size: 3.0em;
+				}
+				.table{
+					border: thick ;
+					border-style: solid;
+					border-width: medium;
+					border-collapse: collapse;
+				}
+				.input{
+					border: none;
+				}
+				td{
+					border: thin ridge;
+				}
+				th{
+					border: medium ridge;
+				}
+				.sp{
+					border: thin ridge;
+				}
+				#warning{
+					width: 100px;
+					height: 50px;
+					background:#ACA9A9;
+					color: red;
+					display: none;
+				}
+				.pim{
+					text-align: center;
+					font-size: 2.0em;
+					font-style: italic;
+					font-weight: bolder;
+				}
+				.special{
+					font-weight: normal;
+					border:thin;
+				}
+			</style>
+			<script type="text/javascript">
+				function show(){
+					var a=document.getElementById('warning');
+					a.style.display='block';
+				}
+				function hide(){
+					var a=document.getElementById('warning');
+					a.style.display='none';
+				}
+		</script>
+	</head>
+	<body>
+		<p id="GK">高考志愿填报表</p>
+		<center>
+		<table>
+			<caption><strong>个人信息表</strong></caption>
+			<tr>
+			<td>姓名</td>
+			<td><input type="text"/></td>
+			<td>出生年月</td>
+			<td><input type="text"/></td>
+			<td>年龄</td>
+			<td><input type="text"/></td>
+			<th class="sp" rowspan="4">此处上传照片<input type="file"/></th>
+		
+			</tr>
+			<tr>
+			<td>性别</td>
+			<td><input type="text"/></td>
+			<td>毕业学校</td>
+			<td><input type="text"/></td>
+			<td>电话号码</td>
+			<td><input type="text"/></td>
+			</tr>
+			<tr>
+				<td>父亲电话</td>
+				<td><input type="text"></td>
+				<td>母亲电话</td>
+				<td><input type="text"/></td>
+				<td>家庭住址</td>
+				<td><input type="text"/></td>
+			</tr>
+			<tr>
+				<td>邮编</td>
+				<td><input type="text"/></td>
+				<td>籍贯</td>
+				<td><input type="text"/></td>
+				<td>成分</td>
+				<td><input type="text"/></td>
+			</tr>
+		</table>
+		<br/>
+		<hr/>
+		<table>
+			<caption><strong>学校意愿</strong></caption>
+			<tr>
+				<th></th>
+				<th>学校编号</th>
+				<th>专业一</th>
+				<th>专业二</th>
+				<th>专业三</th>
+				<th>专业四</th>
+				<th>专业五</th>
+				<th>是否服从调剂</th>
+			</tr>
+			<tr>
+				<th>第一志愿</th>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td>
+				<select>
+					<option selected>是</option>
+					<option>否</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<th>第二志愿</th>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td>
+				<select>
+					<option selected>是</option>
+					<option>否</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<th>第三志愿</th>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td><input type="text"/></td>
+				<td>
+				<select>
+					<option selected>是</option>
+					<option>否</option>
+				</select>
+				</td>
+			</tr>
+		</table>
+			</br>
+		<label><input type="submit" value="提交" onMouseOver="show();" onMouseOut="hide();"/></label>
+		<label><input type="reset" value="重置"/></label>
+		<div id="warning">
+			提交后将不可更改！
+		</div>
+		</center>
+		
+	</body>
+</html>
